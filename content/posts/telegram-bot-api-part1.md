@@ -2,7 +2,7 @@
 title: "Telegram Bot API'ye Giriş - #1"
 date: 2026-09-23T02:00:00+03:00
 draft: false
-tags: ["telegram", "python", "bot-api"]
+tags: ["Telegram", "Python", "Telegram-Bot-API"]
 ---
 
 Telegram Bot API konularını öğrenirken bu konuda Türkçe kaynak eksikliğini fark ettim. Ben ilk olarak Telegram'ın resmi dökümanındaki şu rehberi kullanmıştım: [core.telegram.org/bots/tutorial](https://core.telegram.org/bots/tutorial). Buradan esinlenerek ve asıl bu kaynağa bağlı kalarak Python üzerinden kendimce bir tutorial notu oluşturmak istedim.
