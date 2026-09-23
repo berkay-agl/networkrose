@@ -15,7 +15,7 @@ title = "NetworkRose"
 [params.author]
   name = "Berkay AĞGÜL"
   image = "img/profiles.jpg"
-  headline = "SADECE: BİLGİSAYAR AĞLARI 🖧"
+  headline = "nomen est omen 🖧"
   bio = "Networking, Network Engineering ve Network Automation üzerine odaklanan Bilgisayar Programcılığı öğrencisi. Burada öğrendiklerimi, teknik notlarımı vesaire yazıyorum."
   links = [
       { github = "https://github.com/berkay-agl" },
