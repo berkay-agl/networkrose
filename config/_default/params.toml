@@ -27,7 +27,8 @@ disableImageOptimization = false
   sharingLinks = ["github", "medium", "tryhackme", "outlook"]
 
 [list]
-  showHero = false
+  showHero = true
+  showHeroStyle = "thumbandbg"
   showBreadcrumbs = false
   showSummary = true
   showViews = false
