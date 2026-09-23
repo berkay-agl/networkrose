@@ -15,7 +15,7 @@ Telegram Bot API, geliştirdiğimiz bot uygulamalarının Telegram sunucuları i
 
 Ayrıca bunun için bir tane diagram oluşturttum:
 
-![Telegram Bot API akış diyagramı](/images/telegram-bot-api-diagram.jpeg)
+![Telegram Bot API akış diyagramı](/networkrose/images/telegram-bot-api-diagram.jpeg)
 
 Şimdi API'yi basitçe test etmeye başlayalım, hâlihazırda zaten web browser HTTP Request atabiliyor bu yüzden onu kullanabiliriz. Bunun için ihtiyacımız olan şey zaten Telegram'da **@BotFather** aratarak onu başlatmak ve şu adımları uyguluyoruz:
 
