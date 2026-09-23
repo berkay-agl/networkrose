@@ -13,12 +13,15 @@ title = "NetworkRose"
   # description = "My awesome website"
 
 [params.author]
-  # name = "Your name here"
-  # image = "img/author.jpg"
-  # headline = "I'm only human"
-  # bio = "A little bit about you"
-  # links = [
-  #   { email = "mailto:hello@your_domain.com" },
+  name = "Berkay AĞGÜL"
+  image = "img/profiles.jpg"
+  headline = "Network of Networks"
+  bio = "Network alanında kendimi geliştirmeye çalışan Bilgisayar Programcılığı öğrencisiyim."
+  links = [
+      { github = "https://github.com/berkay-agl" },
+      { medium = "https://medium.com/@brkyagl" },
+      { tryhackme = "https://tryhackme.com/p/brkyagl" },
+      { email = "mailto:berkayagl@outlook.com" },
   #   { link = "https://link-to-some-website.com/" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
   #   { apple = "https://www.apple.com" },
@@ -64,4 +67,4 @@ title = "NetworkRose"
   #   { x-twitter = "https://twitter.com/username" },
   #   { youtube = "https://youtube.com/username" },
   #   { xing = "https://xing.com/profile/username" },
-  # ]
+  ] 

@@ -24,7 +24,7 @@ disableImageOptimization = false
   showTaxonomies = true
   showWordCount = true
   showComments = false
-  sharingLinks = []
+  sharingLinks = ["github", "medium", "tryhackme", "outlook"]
 
 [list]
   showHero = false
