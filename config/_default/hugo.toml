@@ -29,3 +29,7 @@ summaryLength = 0
     disableInlineCSS = true
 
 relativeURLs = true
+
+[params]
+  enableCodeCopy = true
+  enableZoom = true

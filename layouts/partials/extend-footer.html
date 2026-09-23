@@ -1,0 +1,80 @@
+<style>
+  .prose img {
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+  }
+  .prose img:hover {
+    transform: scale(1.01);
+  }
+  .congo-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    z-index: 99999;
+    pointer-events: none;
+  }
+  .congo-lightbox.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .congo-lightbox img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border-radius: 4px;
+    transform: scale(0.97);
+    transition: transform 0.25s ease;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+  .congo-lightbox.active img {
+    transform: scale(1);
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll('.prose img');
+    if (images.length === 0) return;
+
+    const box = document.createElement('div');
+    box.className = 'congo-lightbox';
+    const boxImg = document.createElement('img');
+    box.appendChild(boxImg);
+    document.body.appendChild(box);
+
+    images.forEach(img => {
+      img.addEventListener('click', function () {
+        if (this.srcset) {
+          boxImg.srcset = this.srcset;
+          boxImg.sizes = "100vw";
+        } else {
+          boxImg.removeAttribute('srcset');
+          boxImg.removeAttribute('sizes');
+        }
+        boxImg.src = this.src;
+        box.classList.add('active');
+      });
+    });
+
+    const closeLightbox = () => {
+      box.classList.remove('active');
+    };
+
+    box.addEventListener('click', closeLightbox);
+    
+    window.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && box.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+  });
+</script>
