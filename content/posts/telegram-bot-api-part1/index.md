@@ -2,7 +2,7 @@
 title: "Telegram Bot API'ye Giriş - #1"
 date: 2026-09-23T02:00:00+03:00
 draft: false
-tags: ["Telegram", "Python", "Telegram-Bot-API"]
+tags: ["Telegram", "Telegram-Bot-API"]
 ---
 
 Telegram Bot API konularını öğrenirken bu konuda Türkçe kaynak eksikliğini fark ettim. Ben ilk olarak Telegram'ın resmi dökümanındaki şu rehberi kullanmıştım: [core.telegram.org/bots/tutorial](https://core.telegram.org/bots/tutorial). Buradan esinlenerek ve asıl bu kaynağa bağlı kalarak Python üzerinden kendimce bir tutorial notu oluşturmak istedim.
@@ -15,7 +15,7 @@ Telegram Bot API, geliştirdiğimiz bot uygulamalarının Telegram sunucuları i
 
 Ayrıca bunun için bir tane diagram oluşturttum:
 
-![Telegram Bot API akış diyagramı](/networkrose/images/telegram-bot-api-diagram.jpeg)
+![Telegram Bot API akış diyagramı](diagram.jpeg)
 
 Şimdi API'yi basitçe test etmeye başlayalım, hâlihazırda zaten web browser HTTP Request atabiliyor bu yüzden onu kullanabiliriz. Bunun için ihtiyacımız olan şey zaten Telegram'da **@BotFather** aratarak onu başlatmak ve şu adımları uyguluyoruz:
 
@@ -27,7 +27,7 @@ Bu kısımdan sonra botun başarıyla oluşturulduğunu söyler ve şu kısımda
 
 Şu şekilde tarayıcıdan ziyaret ederek istek atabiliyorsun:
 
-```
+```bash
 https://api.telegram.org/bot8846xxx/getMe
 ```
 
@@ -47,7 +47,7 @@ Bu yüzden bota daha iyi odaklanabiliriz, yani asıl işlevlerine odaklanırız.
 
 Telegram Bot API öğrenirken hâlihazırda bir klasör yapısı önemli. Ben şu şekilde oluşturdum, `BotTutorial` isminde bir klasörüm var, yapısı şöyle:
 
-```
+```bash
 ├── .env                 # Token bilgisini burada tutuyorum
 ├── requirements.txt     # Gerekli libraries listesi burada
 ├── bot.py               # Botun tüm mantığını burada deniyorum
@@ -56,14 +56,14 @@ Telegram Bot API öğrenirken hâlihazırda bir klasör yapısı önemli. Ben ş
 
 `requirements.txt` içinde kullandığım dependencies şu şekilde:
 
-```
+```bash
 python-telegram-bot==22.8
 python-dotenv==1.2.3
 ```
 
 Environment variable kısmında, yani `.env` içinde ise token'ı şöyle tutuyorum:
 
-```
+```bash
 BOT_TOKEN=86575xxx
 ```
 

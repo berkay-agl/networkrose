@@ -3,7 +3,7 @@
 # https://jpanther.github.io/congo/docs/configuration/#theme-parameters
 
 colorScheme = "congo"
-defaultAppearance = "dark"   
+defaultAppearance = "light"   
 autoSwitchAppearance = true    
 
 disableImageOptimization = false

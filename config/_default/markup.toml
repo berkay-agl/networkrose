@@ -13,7 +13,10 @@
 
 [highlight]
   noClasses = false
+  codeFences = true
+  guessSyntax = true
 
 [tableOfContents]
   startLevel = 2
   endLevel = 4
+
