@@ -1,3 +1,74 @@
+html {
+    font-size: 110% !important;
+}
+
 h2.text-xl.text-neutral-500 {
   font-size: 1.3rem !important;
+}
+
+main h1 {
+    margin-bottom: 1.5rem !important;
+}
+
+article img, .prose img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 0.5rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.dark .prose pre, .dark .prose code {
+    color: #e5e7eb !important;
+}
+
+html:not(.dark) .prose pre, html:not(.dark) .prose code {
+    color: #1f2937 !important;
+}
+
+.bg-neutral-100, .dark .bg-neutral-800 {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+article {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 0.5rem;
+}
+
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-full {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rounded-full:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(156, 163, 175, 0.5); 
+}
+
+.flex a { 
+    transition: color 0.3s ease; 
+}
+
+a[href*="github"]:hover { color: #333 !important; }
+a[href*="medium"]:hover { color: #00ab6c !important; }
+a[href*="tryhackme"]:hover { color: #88cc14 !important; }
+a[href*="buymeacoffee"]:hover { color: #FFDD00 !important; }
+.dark a[href*="github"]:hover { color: #ffffff !important; }
+
+main a[href*="/tags/"] {
+    white-space: nowrap !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid rgba(156, 163, 175, 0.2) !important;
+    padding-bottom: 2px !important;
+    transition: all 0.2s ease !important;
+}
+
+main a[href*="/tags/"]:hover {
+    color: #94a3b8 !important;
+    border-bottom-color: #94a3b8 !important;
 }

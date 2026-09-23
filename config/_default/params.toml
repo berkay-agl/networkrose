@@ -2,8 +2,8 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://jpanther.github.io/congo/docs/configuration/#theme-parameters
 
-colorScheme = "congo"
-defaultAppearance = "light"   
+colorScheme = "slate"
+defaultAppearance = "dark"   
 autoSwitchAppearance = false    
 
 disableImageOptimization = false
