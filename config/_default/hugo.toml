@@ -28,7 +28,7 @@ summaryLength = 0
   [services.x]
     disableInlineCSS = true
 
-relativeURLs = true
+# relativeURLs = true
 
 [params]
   enableCodeCopy = true
