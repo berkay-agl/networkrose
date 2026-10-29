@@ -8,7 +8,7 @@ title = "NetworkRose"
 
 [params]
   dateFormat = "2 January 2006"
-
+  description = "Networking, Network Engineering ve Network Automation üzerine teknik notlar."
   # mainSections = ["section1", "section2"]
   # description = "My awesome website"
 
